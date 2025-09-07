@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tarjeta de Felicitación</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Pantalla de candado -->
+  <div id="lock-screen" class="lock-screen">
+    <div class="lock-box">
+      <div class="lock-icon">🔒</div>
+      <h2>Introduce la contraseña</h2>
+      <div class="pin-inputs">
+        <input type="password" maxlength="1" inputmode="numeric">
+        <input type="password" maxlength="1" inputmode="numeric">
+        <input type="password" maxlength="1" inputmode="numeric">
+        <input type="password" maxlength="1" inputmode="numeric">
+      </div>
+      <button id="unlockBtn" class="btn primary">Desbloquear</button>
+      <p id="errorMsg" class="error"></p>
+    </div>
+  </div>
+
+  <div class="background"></div>
+
+  <!-- Tulipanes de fondo -->
+  <div class="tulip-field"></div>
+
+  <main class="wrapper" style="display:none;">
+    <section class="card" id="card">
+      <div class="sparkles" aria-hidden="true"></div>
+
+      <h1 class="title">¡Feliz Día Pao! 🎉</h1>
+      <p class="subtitle">
+        Te deseo un día lleno de sorpresas bonitas, risas y buenos momentos.
+      </p>
+
+      <div class="divider"></div>
+
+      <p class="message">
+        Eres alguien tan especial. <br />
+        Tenemos muy poco tiempo de conocernos y realmente eres quien vale la pena mantener cerca. <br /> 
+        Muy pocas personas me causan una buena vibra y tu lo llevas más alla. <br />
+        Me encanta tu forma de ser, tu sonrisa y tu energía positiva en los momentos que más se necesita. <br />
+        Por lo que espero que podamos seguir compartiendo momentos juntos y que nuestra amistad siga creciendo. <br />
+        Muy pocas veces en mi vida, pero cuando considero a alguien "amiga", es porque realmente valoro su presencia en mi vida y espero que sea mutuo. <br />
+        Si necesitas a alguien que te escuche y apoye, aqui estoy y estaré, cualquier cosa me importa. <br />
+        Gracias por ser como eres, por tu alegría, tu bondad y tu autenticidad. <br />
+        Te mereces lo mejor. <br />
+        ¡Que todos tus deseos se cumplan hoy y siempre!
+      </p>
+
+      <div class="signature">
+        — Con cariño, <span contenteditable="true">Gerry</span>
+      </div>
+
+      <div class="actions">
+        <button id="btnSurprise" class="btn primary">¡Sorpresa!</button>
+        <button id="btnMusic" class="btn primary">🎵 </button>
+        <button id="btnTheme" class="btn ghost" aria-pressed="false">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <div id="fx-layer" class="fx-layer" aria-hidden="true"></div>
+
+  <!-- Reproductor oculto -->
+  <audio id="audioPlayer" preload="auto">
+    <source src="Dicen De Mi.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
